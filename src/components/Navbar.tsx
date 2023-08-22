@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Menu from './Menu'
+import MenuSmallScreen from './MenuSmallScreen'
 
 type Props = {}
 
@@ -18,8 +18,8 @@ const Navbar = (props: Props) => {
             </div>
 
             {/* MOBILE MENU */}
-            <div>
-                <Menu />
+            <div className='md:hidden'>
+                <MenuSmallScreen />
             </div>
         </div>
     )

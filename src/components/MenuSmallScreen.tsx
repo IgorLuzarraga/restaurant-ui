@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from 'react'
+import CartIcon from "./CartIcon"
 
 const links = [
     { id: 1, title: "Homepage", url: "/" },
@@ -13,8 +14,8 @@ const links = [
 
 type Props = {}
 
-const Menu = (props: Props) => {
-    const [openMenu, setOpenMenu] = useState(true)
+const MenuSmallScreen = (props: Props) => {
+    const [openMenu, setOpenMenu] = useState(false)
 
     // TEMPORARY
     const user = false
@@ -40,21 +41,16 @@ const Menu = (props: Props) => {
                                 {item.title}
                             </Link>
                         )}
-                        {/* {!user ?
-                            <Link href='/login' onClick={() => setOpenMenu(false)}>
-                                Login
-                            </Link>
-                            :
-                            <Link href='/orders' onClick={() => setOpenMenu(false)}>
-                                Orders
-                            </Link>
-                        } */}
 
                         <Link href={!user ? '/login' : '/orders'}
                             onClick={() => setOpenMenu(false)}
                         >
                             {!user ? 'Login' : 'Orders'}
                         </Link>
+
+                        <div onClick={() => setOpenMenu(!openMenu)}>
+                            <CartIcon />
+                        </div>
                     </div>
                 )
             }
@@ -62,4 +58,4 @@ const Menu = (props: Props) => {
     )
 }
 
-export default Menu
+export default MenuSmallScreen
