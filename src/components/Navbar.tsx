@@ -9,7 +9,7 @@ const Navbar = (props: Props) => {
     const user = false
 
     return (
-        <div className='h-12 text-purple-500 p-4 flex items-center justify-between 
+        <div className='h-12 text-purple-800 p-4 flex items-center justify-between 
                         border-b-2 border-b-purple-500 uppercase md:h-24 lg:px-20 xl:px-40'
         >
             {/* LEFT LINKS */}
