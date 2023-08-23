@@ -12,13 +12,6 @@ const Navbar = (props: Props) => {
         <div className='h-12 text-purple-800 p-4 flex items-center justify-between bg-purple-50
                         border-b-2 border-b-purple-500 uppercase md:h-24 lg:px-20 xl:px-40'
         >
-            {/* LEFT LINKS */}
-            <div className='hidden md:flex gap-4 flex-1'>
-                <Link href="/">Homepage</Link>
-                <Link href="/menu">Menu</Link>
-                <Link href="/">Contact</Link>
-            </div>
-
             {/* LOGO */}
             <div className='text-xl md:font-bold flex-1 md:text-center'>
                 <Link
@@ -26,6 +19,13 @@ const Navbar = (props: Props) => {
                 >
                     Ciao Bella
                 </Link>
+            </div>
+
+            {/* LEFT LINKS */}
+            <div className='hidden md:flex gap-4 flex-1'>
+                <Link href="/">Home</Link>
+                <Link href="/menu">Menu</Link>
+                <Link href="/">Contact</Link>
             </div>
 
             {/* MOBILE MENU */}
