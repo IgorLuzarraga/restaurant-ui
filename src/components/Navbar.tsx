@@ -35,11 +35,10 @@ const Navbar = (props: Props) => {
 
             {/* RIGTH LINKS */}
             <div className='hidden md:flex gap-4 items-center justify-end flex-1'>
-                <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer
-                              bg-green-300 px-1 rounded-md"
+                <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer px-1"
                 >
-                    <Image src="/phone.png" alt="Phone icon" width={20} height={20} />
-                    <span>123 456 78</span>
+                    <Image src="/phone.png" alt="Phone icon" width={30} height={30} className='bg-green-300 p-2 rounded-2xl' />
+                    <span className='text-white lg:text-purple-800'>123 456 78</span>
                 </div>
 
                 {!user ? (

@@ -1,10 +1,8 @@
-import React from 'react'
+import Image from "next/image"
 
-type Props = {}
-
-const Offer = (props: Props) => {
+const Offer = () => {
     return (
-        <div>Offer</div>
+        <div>kaixo</div>
     )
 }
 
