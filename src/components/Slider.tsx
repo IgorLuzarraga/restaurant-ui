@@ -6,17 +6,22 @@ import Image from "next/image"
 const data = [
     {
         id: 1,
-        title: "Fresh, irresistibly crispy, and always hot",
-        image: "/slide1.png"
+        title: "Savorable dishes, ideal for family gatherings",
+        image: "/slide4.jpg"
     },
     {
         id: 2,
         title: "We bring your order wherever you are",
-        image: "/slide2.png"
+        image: "/slide1.jpg"
     },
     {
         id: 3,
-        title: "Delightful pizza, best for family sharing moments",
+        title: "Fresh, irresistibly crispy, and always hot",
+        image: "/slide2.jpg"
+    },
+    {
+        id: 4,
+        title: "Delightful food, best for family sharing moments",
         image: "/slide3.jpg"
     }
 ]

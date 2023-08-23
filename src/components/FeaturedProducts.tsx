@@ -17,15 +17,14 @@ const FeaturedProducts = () => {
                     >
                         {/* IMAGE CONTAINER */}
                         {product.img && (
-                            <div className="relative flex-1 w-full hover:rotate-[60deg]
+                            <div className="relative flex-1 w-full hover:-rotate-45
                             transition-all duration-500"
                             >
                                 <Image src={product.img} alt="Product image" fill
-                                    className="object-contain"
+                                    className="object-contain filter grayscale hover:filter-none hover:filter-hue-rotate-180"
                                 />
                             </div>
                         )}
-
 
                         {/* TEXT CONTAINER */}
                         <div className="flex flex-1 flex-col items-center
