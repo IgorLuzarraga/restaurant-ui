@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
                 <Link
                     href="/"
                 >
-                    Ciao Bella
+                    Ciao Napoli
                 </Link>
             </div>
 
