@@ -13,7 +13,7 @@ const LoginPage = () => {
 
                 {/* IMAGE CONTAINER */}
                 <div className="relative h-1/3 w-full md:h-full md:w-1/2">
-                    <Image src="/loginBg.png" alt="" fill
+                    <Image src="/login.png" alt="" fill
                         className="object-cover" />
                 </div>
 
@@ -24,9 +24,9 @@ const LoginPage = () => {
                         Welcome
                     </h1>
 
-                    <p>Log into your account or create a new one using social buttons</p>
+                    <p>Sign in with your social media account</p>
 
-                    <button className="flex gap-4 p-4 ring-1 ring-orange-100 rounded-md">
+                    <button className="flex gap-4 p-4 ring-1 ring-orange-200 rounded-md">
                         <Image
                             src="/google.png"
                             alt="Google image"
@@ -37,7 +37,7 @@ const LoginPage = () => {
                         <span>Sign in with Google</span>
                     </button>
 
-                    <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md">
+                    <button className="flex gap-4 p-4 ring-1 ring-blue-200 rounded-md">
                         <Image
                             src="/facebook.png"
                             alt="Facebook image"
