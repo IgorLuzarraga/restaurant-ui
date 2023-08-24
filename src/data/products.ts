@@ -333,9 +333,9 @@ export const pizzas: Products = [
 
 export const singleProduct: Product = {
   id: 1,
-  title: "Sicilian",
-  desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella vegan cheese, delivering a kick with every bite.",
-  img: "/temporary/p1.png",
+  title: "Bella Napoli",
+  desc: "Discover our Vegan Bella Napoli Pizza. A tantalizing blend of plant-based pepperoni, zesty jalapeños, and melted vegan mozzarella cheese. With a sprinkle of crushed red pepper flakes, each bite delivers a burst of flavor that's sure to ignite your senses. Enjoy a vegan delight that's both spicy and satisfying, all in one delectable slice.",
+  img: "/temporary/p3.png",
   price: 14.9,
   options: [
     {

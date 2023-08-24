@@ -11,7 +11,7 @@ type Props = {
     }[]
 }
 
-const Price = ({ price, options }: Props) => {
+const Price = ({ price, id, options }: Props) => {
     const [total, setTotal] = useState(price)
     const [quantity, setQuantity] = useState(1)
     const [selected, setSelected] = useState(0)
@@ -21,17 +21,22 @@ const Price = ({ price, options }: Props) => {
     }, [quantity, selected, options, price])
 
     return (
-        <div className="">
-            <h2 className="">
+        <div className="flex flex-col gap-4">
+
+            <h2 className="text-2xl font-bold">
                 ${total.toFixed(2)}
             </h2>
 
             {/* options container */}
-            <div className="">
+            <div className="flex gap-4">
                 {options?.map((option, index) => (
                     <button
                         key={`${option.title}-${index}`}
-                        className=""
+                        className="min-w-[6rem] p-2 ring-1 ring-purple-500 rounded-md"
+                        style={{
+                            background: selected === index ? "rgb(168,85,247)" : "white",
+                            color: selected === index ? "white" : "rgb(168,85,247)"
+                        }}
                         onClick={() => setSelected(index)}
                     >
                         {option.title}
@@ -40,13 +45,14 @@ const Price = ({ price, options }: Props) => {
             </div>
 
             {/* QUANTITY AND ADD BUTTON CONTAINER */}
-            <div className="">
+            <div className="flex justify-between items-center">
 
                 {/* QUANTITY */}
-                <div>
+                <div className="flex justify-between ring-1 ring-purple-500
+                p-3 w-full">
                     <span>Quantity</span>
 
-                    <div className="">
+                    <div className="flex gap-4 items-center">
                         <button
                             onClick={() => setQuantity(prev => prev > 1 ? prev - 1 : 1)}
                         >
@@ -65,7 +71,9 @@ const Price = ({ price, options }: Props) => {
                 </div>
 
                 {/*  CART BUTTON */}
-                <button className="uppercase">
+                <button className="uppercase w-56 bg-purple-500 p-3 text-white
+                ring-1 ring-purple-500"
+                >
                     Add to Cart
                 </button>
 
