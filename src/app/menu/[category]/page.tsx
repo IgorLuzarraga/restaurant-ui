@@ -25,10 +25,13 @@ const CategoryPage = () => {
     // }
 
     return (
-        <div className="flex flex-wrap text-purple-500">
+        <div className="flex items-center justify-center flex-wrap 
+        text-purple-500 gap-0 lg:gap-4 p-0 lg:p-8">
             {pizzas.map((item) => (
                 <Link
-                    className="w-full h-[60vh] border-r-2 border-b-2 border-purple-500 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between group odd:bg-fuchsia-50"
+                    className="w-full h-[50vh] border-2 border-purple-500 rounded-lg
+                    sm:w-1/3 lg:w-1/4 p-4 flex flex-col justify-between group
+                    odd:bg-fuchsia-50"
                     href={`/product/${item.id}`}
                     key={item.id}>
 
@@ -41,10 +44,13 @@ const CategoryPage = () => {
                     )}
 
                     {/* TEXT CONTAINER */}
-                    <div className="flex items-center justify-between font-bold">
+                    <div className="flex flex-col lg:flex-row text-center items-center justify-between font-bold">
                         <h1 className="text-2xl uppercase p-2">{item.title}</h1>
                         <h2 className="group-hover:hidden text-xl">${item.price}</h2>
-                        <button className="hidden group-hover:block uppercase bg-red-500 text-white p-2 rounded-md">Add to Cart</button>
+                        <button className="hidden group-hover:block uppercase bg-purple-500 
+                        text-white px-4 py-2 rounded-md">
+                            Order
+                        </button>
                     </div>
                 </Link>
             ))}

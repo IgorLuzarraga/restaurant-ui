@@ -32,8 +32,8 @@ const FeaturedProducts = () => {
                             <h1 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">{product.title}</h1>
                             <p className="p-4 2xl:p-8">{product.desc}</p>
                             <span className="text-xl font-extrabold">${product.price}</span>
-                            <button className="bg-purple-500 text-white p-2 rounded-md">
-                                Add to Cart
+                            <button className="bg-purple-500 text-white px-4 py-2 rounded-md">
+                                Order
                             </button>
                         </div>
                     </div>

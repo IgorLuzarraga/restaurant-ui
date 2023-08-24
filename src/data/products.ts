@@ -12,7 +12,7 @@ type Products = Product[];
 export const featuredProducts: Products = [
   {
     id: 1,
-    title: "Mediterranean Delight",
+    title: "Mediterranean",
     desc: "Embark on a culinary journey with this Mediterranean-inspired creation, featuring zesty feta vegan cheese, Kalamata olives, sun-dried tomatoes, and a sprinkle of oregano.",
     img: "/temporary/p8.png",
     price: 12.9,
@@ -204,7 +204,7 @@ export const featuredProducts: Products = [
 export const pizzas: Products = [
   {
     id: 1,
-    title: "Mediterranean Delight",
+    title: "Mediterranean",
     desc: "Embark on a culinary journey with this Mediterranean-inspired creation, featuring zesty feta vegan cheese, Kalamata olives, sun-dried tomatoes, and a sprinkle of oregano.",
     img: "/temporary/p8.png",
     price: 12.9,
@@ -268,7 +268,7 @@ export const pizzas: Products = [
   },
   {
     id: 4,
-    title: "Four vegan cheese Fantasy",
+    title: "Cheese Fantasy",
     desc: "Experience pure cheesy bliss with a melty blend of mozzarella, cheddar, provolone, and Parmesan vegan cheeses, creating a rich and indulgent pizza experience.",
     img: "/temporary/p12.png",
     price: 12.9,
@@ -310,7 +310,7 @@ export const pizzas: Products = [
   },
   {
     id: 6,
-    title: "Pesto Primavera",
+    title: "Pesto Spring",
     desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
     img: "/temporary/p10.png",
     price: 13.9,
