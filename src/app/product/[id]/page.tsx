@@ -5,7 +5,7 @@ import Image from "next/image"
 const SingleProductPage = () => {
     return (
         <div className="flex flex-col xl:flex-row gap-4 xl:gap-8 p-4 lg:px-20 
-        xl:px-40 h-screen items-center text-purple-500"
+        xl:px-40 h-[120vh] xl:h-screen items-center text-purple-500"
         >
 
             {/* IMAGE CONTAINER */}
@@ -22,7 +22,7 @@ const SingleProductPage = () => {
 
             {/* TEXT CONTAINER */}
             <div className="h-1/2 p-4 md:h-[70%] flex flex-col gap-4 justify-center
-            md:gap-6 xl:gap-8 shadow-2xl">
+            md:gap-6 xl:gap-8 xl:shadow-2xl">
 
                 <h1 className="text-3xl font-bold uppercase xl:text-5xl">
                     {singleProduct.title}
