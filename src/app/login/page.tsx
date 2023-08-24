@@ -9,7 +9,7 @@ const LoginPage = () => {
 
             {/* BOX */}
             <div className="h-full shadow-2xl shadow-purple-400 rounded-md flex flex-col md:flex-row 
-	        md:h-[70%] md:w-full lg:w-[60%] 2xl:w-1/2">
+	        md:h-[70%] md:w-full lg:w-[60%] 2xl:w-1/2 text-purple-700">
 
                 {/* IMAGE CONTAINER */}
                 <div className="relative h-1/3 w-full md:h-full md:w-1/2">
