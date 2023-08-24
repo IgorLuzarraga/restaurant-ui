@@ -12,7 +12,7 @@ const MenuPage = (props: Props) => {
                 <Link
                     href={`/menu/${category.slug}`}
                     key={category.id}
-                    className="w-full h-1/3 bg-cover p-4 md:p-8 md:h-1/2"
+                    className="w-full h-1/3 bg-cover p-4 md:p-8 md:h-1/2 shadow-lg shadow-purple-900"
                     style={{ backgroundImage: `url(${category.img})` }}
                 >
                     <div className={`text-${category.color} w-1/2`}>

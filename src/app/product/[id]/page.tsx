@@ -21,8 +21,8 @@ const SingleProductPage = () => {
             )}
 
             {/* TEXT CONTAINER */}
-            <div className="h-1/2 md:h-[70%] flex flex-col gap-4 justify-center
-            md:gap-6 xl:gap-8">
+            <div className="h-1/2 p-4 md:h-[70%] flex flex-col gap-4 justify-center
+            md:gap-6 xl:gap-8 shadow-2xl">
 
                 <h1 className="text-3xl font-bold uppercase xl:text-5xl">
                     {singleProduct.title}
