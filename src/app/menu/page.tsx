@@ -1,6 +1,6 @@
 import { menu } from '@/data/products'
 import Link from 'next/link'
-import { btnTextColor } from '@/utility/utils'
+import { btnBgColor, btnTextColor } from '@/utility/utils'
 
 type Props = {}
 
@@ -20,7 +20,7 @@ const MenuPage = (props: Props) => {
                         <p className='text-sm my-2'>{category.desc}</p>
                     </div>
 
-                    <button className={`hidden 2xl:block bg-${category.color}
+                    <button className={`hidden 2xl:block ${btnBgColor(category.id)}
                     py-2 px-4 rounded-md ${btnTextColor(category.id)}`}>
                         Check Out
                     </button>

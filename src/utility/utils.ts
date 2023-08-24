@@ -10,3 +10,18 @@ export const btnTextColor = (categoryId: number) => {
             return 'text-black'
     }
 }
+
+
+export const btnBgColor = (categoryId: number) => {
+    return 'bg-purple-500'
+    switch (categoryId) {
+        case 1:
+            return 'bg-white'
+        case 2:
+            return 'bg-black'
+        case 3:
+            return 'bg-white'
+        default:
+            return 'bg-white'
+    }
+}

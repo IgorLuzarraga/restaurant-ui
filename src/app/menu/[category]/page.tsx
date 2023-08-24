@@ -1,11 +1,55 @@
-import React from 'react'
+import { pizzas } from "@/data/products";
+import Image from "next/image";
+import Link from "next/link";
+// import { useRouter } from 'next/router';
 
-type Props = {}
+const CategoryPage = () => {
+    // const router = useRouter();
+    // const { category } = router.query; // Extract the category from the router query
 
-const CategoryPage = (props: Props) => {
+    // let items = [];
+
+    // switch (category) {
+    //     case "pizzas":
+    //         items = pizzas;
+    //         break;
+    //     case "pastas":
+    //         items = pastas;
+    //         break;
+    //     case "burgers":
+    //         items = burgers;
+    //         break;
+    //     default:
+    //         // Handle unknown category
+    //         break;
+    // }
+
     return (
-        <div>CategoryPage</div>
-    )
-}
+        <div className="flex flex-wrap text-purple-500">
+            {pizzas.map((item) => (
+                <Link
+                    className="w-full h-[60vh] border-r-2 border-b-2 border-purple-500 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between group odd:bg-fuchsia-50"
+                    href={`/product/${item.id}`}
+                    key={item.id}>
 
-export default CategoryPage
+                    {/* IMAGE CONTAINER */}
+                    {item.img && (
+                        <div className="relative h-[80%]">
+                            <Image src={item.img} alt="" fill
+                                className="object-contain" />
+                        </div>
+                    )}
+
+                    {/* TEXT CONTAINER */}
+                    <div className="flex items-center justify-between font-bold">
+                        <h1 className="text-2xl uppercase p-2">{item.title}</h1>
+                        <h2 className="group-hover:hidden text-xl">${item.price}</h2>
+                        <button className="hidden group-hover:block uppercase bg-red-500 text-white p-2 rounded-md">Add to Cart</button>
+                    </div>
+                </Link>
+            ))}
+        </div>
+    );
+};
+
+export default CategoryPage;
