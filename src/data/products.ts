@@ -366,14 +366,6 @@ type Menu = {
 export const menu: Menu = [
   {
     id: 1,
-    slug: "pizzas",
-    title: "Cheesy Pizzas",
-    desc: "Delight in the world of plant-based pizza perfection: Tempting slices, tantalizing toppings, and melty vegan cheese.",
-    img: "/temporary/m3.png",
-    color: "white",
-  },
-  {
-    id: 2,
     slug: "pastas",
     title: "Italian Pastas",
     desc: "Indulge in the essence of Italian culinary artistry with our handcrafted vegan pasta selection.",
@@ -381,11 +373,19 @@ export const menu: Menu = [
     color: "white",
   },
   {
-    id: 3,
+    id: 2,
     slug: "burgers",
     title: "Juicy Burgers",
     desc: "Discover Vegan Burger Delight: Savory plant-based patties, bold flavors, gourmet toppings.",
     img: "/temporary/m2.png",
     color: "black",
+  },
+  {
+    id: 3,
+    slug: "pizzas",
+    title: "Cheesy Pizzas",
+    desc: "Experience the realm of plant-based pizza: Irresistible slices, enticing toppings, and vegan cheese that melts.",
+    img: "/temporary/m3.png",
+    color: "white",
   }
 ];
